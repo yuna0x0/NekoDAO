@@ -1,7 +1,7 @@
 module.exports = {
   dashboard: {
     port: 24012,
-    host: "localhost",
+    host: "127.0.0.1",
     verbose: false,
   },
   networks: {
@@ -11,9 +11,12 @@ module.exports = {
       network_id: "*"
     },
     dashboard: {
-      host: "localhost",
+      host: "127.0.0.1",
       port: 24012,
       network_id: "*"
+    },
+    base_goerli: {
+      network_id: 84531
     }
   },
   mocha: {},
