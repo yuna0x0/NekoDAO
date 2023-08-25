@@ -1,16 +1,22 @@
 {
   "name": "neko-dao",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "NekoDAO - Solidity Contract Source Code",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "truffle compile --all",
     "migrate": "truffle migrate --network dashboard",
     "migrate:dev": "truffle migrate --network development"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "truffle",
+    "dao",
+    "solidity",
+    "openzeppelin"
+  ],
+  "author": "Edison Lee <edisonlee@edisonlee55.com>",
   "license": "MIT",
   "devDependencies": {
     "@openzeppelin/truffle-upgrades": "^1.20.1",
