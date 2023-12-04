@@ -4,14 +4,14 @@
   "description": "NekoDAO - Solidity Contract Source Code",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "truffle compile --all",
-    "migrate": "truffle migrate --network dashboard",
-    "migrate:dev": "truffle migrate --network development"
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js",
+    "deploy:localhost": "npx hardhat run scripts/deploy.js --network localhost"
   },
   "keywords": [
     "ethereum",
     "smart-contracts",
-    "truffle",
+    "hardhat",
     "dao",
     "solidity",
     "openzeppelin"
@@ -19,9 +19,9 @@
   "author": "Edison Lee <edisonlee@edisonlee55.com>",
   "license": "MIT",
   "devDependencies": {
-    "@openzeppelin/truffle-upgrades": "^1.20.1",
-    "truffle": "^5.11.2",
-    "truffle-plugin-verify": "^0.6.5"
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.4.3",
+    "hardhat": "^2.19.1"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.3",

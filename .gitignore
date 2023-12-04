@@ -61,6 +61,10 @@ contracts-exposed
 /cache
 /artifacts
 
+# TypeChain files
+/typechain
+/typechain-types
+
 # Foundry
 /out
 

@@ -7,20 +7,20 @@ $ pnpm install
 
 ## Compile
 ```bash
-$ truffle compile --all
+$ npx hardhat compile
 # or
 $ pnpm run compile
 ```
 
 ## Migrate (Deploy)
 ```bash
-# Using Truffle Dashboard
-$ truffle migrate --network dashboard
+# Using Hardhat Network
+$ npx hardhat run scripts/deploy.js
 # or
-$ pnpm run migrate
+$ pnpm run deploy
 
-# Using Truffle Ganache (Development)
-$ truffle migrate --network development
+# Using Localhost Network
+$ npx hardhat run scripts/deploy.js --network localhost
 # or
-$ pnpm run migrate:dev
+$ pnpm run deploy:localhost
 ```
