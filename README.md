@@ -12,7 +12,7 @@ $ npx hardhat compile
 $ pnpm run compile
 ```
 
-## Migrate (Deploy)
+## Deploy
 ```bash
 # Using Hardhat Network
 $ npx hardhat run scripts/deploy.js
